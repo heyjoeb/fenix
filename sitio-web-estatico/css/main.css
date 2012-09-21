@@ -867,26 +867,27 @@ fin estilos drop-menu
 }
 #tabla-precios-igbc .txt-precios {
 	float: left;
-	width: 150px;
+	width: 170px;
 	background-image: url(../img/icon-arrow.png);
 	background-repeat: no-repeat;
 	font-size: 0.7em;
 	color: #121212;
 	padding-left: 20px;
-	margin-left: 25px;
+	margin-left: 15px;
 	margin-top: 25px;
 }
 
 .txt-precios {
 	float: left;
-	width: 100px;
+	width: 115px;
 	background-image: url(../img/icon-arrow.png);
 	background-repeat: no-repeat;
-	font-size: 0.7em;
+	font-size: 0.6em;
 	color: #121212;
 	padding-left: 20px;
-	margin-left: 25px;
+	margin-left: 15px;
 	margin-top: 10px;
+	line-height: 1.6em;
 }
 .yellow-normal {
 	color: #e28101;
@@ -1262,7 +1263,7 @@ fin estilos drop-menu
 }
 #footer ul li  {
 	display: inline;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 #footer ul li a  {
 	color: #FFF;
@@ -1277,11 +1278,11 @@ fin estilos drop-menu
 }
 
 #footer ul .last-footer-link  {
-	margin-right: 75px;
+	margin-right: 50px;
 }
 #footer ul .email-footer-link  {
 	background-image: url(../img/icon_mail.png);
 	background-repeat: no-repeat;
-	margin-left: 20px;
+	margin-left: 10px;
 	padding-left: 30px;
 }

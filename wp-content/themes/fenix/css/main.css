@@ -662,7 +662,30 @@ fin estilos drop-menu
 }
 
 
-
+#main-wrapper-light h1 {
+	color: #ec9f01;
+}
+#main-wrapper-light .main-content p {
+	color: #464646;
+	font-size: 0.8em;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#main-wrapper-light .main-content ul {
+	clear: left;
+	list-style-image: url(../img/icon-arrow.png);
+	font-size: 0.8em;
+}
+#main-wrapper-light .main-content li {
+	color: #121212;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#main-wrapper-light .main-content em {
+	font-style: italic;
+	color: #ec9f01;
+}
 
 
 .main-content .one-column {
@@ -1003,6 +1026,9 @@ fin estilos drop-menu
 .sidebar p {
 	color: #FFF;
 }
+#main-wrapper-light .sidebar p {
+	color: #464646;
+}
 #container-videos {
 	width: 250px;
 	height: 310px;
@@ -1123,34 +1149,34 @@ fin estilos drop-menu
 	margin-top: 0px;
 }
 
-.sidebar #fast-contact-light {
+#main-wrapper-light .sidebar .wpcf7 {
 	font-size: 0.8em;
 	color: #464646;
 	margin-bottom: 20px;
 }
-#fast-contact-light p {
+#main-wrapper-light .sidebar .wpcf7 p {
 	margin-top: 0px;
 }
-#fast-contact-light .label-contact {
+#main-wrapper-light .sidebar .wpcf7 .label-contact {
 	display: block;
 	margin-bottom: 12px;
 	text-align: right;
 }
-#fast-contact-light .label-contact-last {
+#main-wrapper-light .sidebar .wpcf7 .label-contact-last {
 	display: block;
 	margin-bottom: 12px;
 	text-align: right;
 }
-#fast-contact-light .label-contact input {
+#main-wrapper-light .sidebar .wpcf7 .label-contact input {
 	color: #999;
 }
 
-#fast-contact-light .label-contact-last textarea {
+#main-wrapper-light .sidebar .wpcf7 .label-contact-last textarea {
 	width: 150px;
 	height: 40px;
 	color: #999;
 }
-#fast-contact-light .button {
+#main-wrapper-light .sidebar .wpcf7 .button {
 	width: 50px;
 	margin-left: 180px;
 }

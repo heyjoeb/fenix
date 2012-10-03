@@ -1270,6 +1270,7 @@ fin estilos drop-menu
 #footer ul li a  {
 	color: #FFF;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 #footer ul li a:hover {
 	color: #FFF;
@@ -1279,8 +1280,8 @@ fin estilos drop-menu
 	margin-right: 10px;
 }
 
-#footer ul .last-footer-link  {
-	margin-right: 50px;
+#footer ul .first-social-icon  {
+	margin-left: 35px;
 }
 #footer ul .email-footer-link  {
 	background-image: url(../img/icon_mail.png);

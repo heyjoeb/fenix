@@ -130,3 +130,18 @@ function slider_options( $groups ) {
 	$groups[] = $my_group;
 	return $groups;
 }
+
+//registrar zonas de widgets
+function create_widget_zones()
+{
+	register_sidebar( array(
+		'name' => 'Area Principal Widgets',
+		'id' => 'primary-widget-area',
+		'description' => 'Para el home page y paginas normales',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h1>',
+		'after_title' => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'create_widget_zones' );

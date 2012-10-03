@@ -1106,12 +1106,12 @@ fin estilos drop-menu
 	color: #ec9f01;
 	text-decoration: underline;
 }
-.sidebar #fast-contact {
+.sidebar .wpcf7 {
 	font-size: 0.8em;
 	color: #FFF;
 	margin-bottom: 20px;
 }
-#fast-contact p {
+.wpcf7 p {
 	margin-top: 0px;
 }
 
@@ -1151,26 +1151,26 @@ fin estilos drop-menu
 	margin-right: 7px;
 }
 
-#fast-contact .label-contact {
+.wpcf7 .label-contact {
 	display: block;
 	margin-bottom: 12px;
 	text-align: right;
 }
-#fast-contact .label-contact-last {
+.wpcf7 .label-contact-last {
 	display: block;
 	margin-bottom: 12px;
 	text-align: right;
 }
-#fast-contact .label-contact input {
+.wpcf7 .label-contact input {
 	color: #999;
 }
 
-#fast-contact .label-contact-last textarea {
+.wpcf7 .label-contact-last textarea {
 	width: 150px;
 	height: 40px;
 	color: #999;
 }
-#fast-contact .button {
+.wpcf7 .button {
 	width: 50px;
 	margin-left: 180px;
 }

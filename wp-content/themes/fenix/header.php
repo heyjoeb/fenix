@@ -37,7 +37,16 @@
 <!--[if lt IE 7]>
   <p class="chromeframe">Está usando un navegador desactualizado. <a href="http://browsehappy.com/">Actualice su navegador hoy.</a> o <a href="http://www.google.com/chromeframe/?redirect=true">instale Google Chrome Frame</a> para una mejor experiencia al navegar este sitio.</p>
 <![endif]-->
-	<div id="main-wrapper">
+
+	<?php
+	global $post;
+
+	if ( is_page() && $post->post_parent ) {
+		echo '<div id="main-wrapper">';
+	} else {
+		echo '<div id="main-wrapper-light">';
+	}
+	?>
 
 		<div id="nav-main">
 			<?php

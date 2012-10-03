@@ -2,6 +2,11 @@
 
 <div class="main-content">
 
+  <?php
+  global $post;
+  if ($post->post_parent == 0):
+  ?>
+
   <h1><?php the_title(); ?></h1>
   <div class="underline"></div>
   <div>
@@ -11,6 +16,17 @@
   ?>
   </div>
   <div class="clearfloat"></div>
+
+  <?
+  else:
+    $parent = get_post($post->post_parent);
+    $pre_title = $parent->post_title .' // ';
+  ?>
+
+  <h1><?php echo $pre_title ?><?php the_title(); ?></h1>
+  <div class="underline"></div>
+
+  <?php endif; ?>
 
   <?php while ( have_posts() ) : the_post(); ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class('one-column'); ?>>

@@ -378,12 +378,14 @@ h2 {
 #nav-main ul li a {
 	color: #FFF;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 #nav-main ul li a:hover {
 	color: #EC9F01;
 	text-decoration: underline;
 }
-#nav-main ul li .active-nav {
+#nav-main ul li.current-menu-item > a,
+#nav-main ul li.current-menu-parent > a {
 	color: #ec9f01;
 	text-decoration: underline;
 }
@@ -399,8 +401,8 @@ estilos drop-menu
 	padding:0;
 	list-style:none;
 	margin: 0;
-	}	
-	
+	}
+
 		/* make the LI display inline */
 		/* it's position relative so that position absolute */
 		/* can be used in submenu */
@@ -414,7 +416,7 @@ estilos drop-menu
 	margin-left: 1px;
 	text-align: center;
 		}
-		
+
 		/* this is the parent menu */
 		#drop-menu li a {
 	display:block;
@@ -431,14 +433,14 @@ estilos drop-menu
 		#drop-menu li a:hover {
 			color:#fff;
 		}
-	
+
 		/* you can make a different style for default selected value */
 		#drop-menu a.selected {
 			color:#f00;
 		}
-	
+
 		/* submenu, it's hidden by default */
-		#drop-menu ul {
+		#drop-menu ul.sub-menu {
 	position:absolute;
 	width:177px;
 	left:0;
@@ -449,8 +451,8 @@ estilos drop-menu
 	background-color: #333333;
 	font-size: 0.7em;
 		}
-		
-		#drop-menu ul li {
+
+		#drop-menu ul.sub-menu li {
 	width:171px;
 	float:left;
 	text-align: left;
@@ -461,19 +463,19 @@ estilos drop-menu
 	border-bottom-style: dashed;
 	border-bottom-color: #0D0D0D;
 		}
-		
+
 		/* display block will make the link fill the whole area of LI */
-		#drop-menu ul a {
-			display:block;  
+		#drop-menu ul.sub-menu a {
+			display:block;
 			height:15px;
-			padding: 8px 5px; 
-			color:#666;
+			padding: 8px 5px;
+			text-transform: none;
 		}
-		
-		#drop-menu ul a:hover {
-			text-decoration:underline;	
+
+		#drop-menu ul.sub-menu a:hover {
+			text-decoration:underline;
 		}
-#drop-menu li ul .first-submenu {
+#drop-menu li ul.sub-menu li:first-child {
 	border-top-width: 4px;
 	border-top-style: solid;
 	border-top-color: #ec9f01;
@@ -484,7 +486,7 @@ estilos drop-menu
 		/* fix ie6 small issue */
 		/* we should always avoid using hack like this */
 		/* should put it into separate file : ) */
-		*html #drop-menu ul {
+		*html #drop-menu ul.sub-menu {
 			margin:0 0 0 -2px;
 		}
 /*---------------------------------------------------------------
@@ -1030,7 +1032,7 @@ fin estilos drop-menu
 	color: #cdcdcd;
 	text-decoration: none;
 	display: block;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 

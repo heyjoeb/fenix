@@ -677,8 +677,14 @@ fin estilos drop-menu
 
 .main-content .one-column img {
 	border: 4px solid #999999;
+}
+.main-content .alignleft {
 	float: left;
 	margin-right: 20px;
+}
+.main-content .alignright {
+	float: right;
+	margin-left: 20px;
 }
 .main-content .one-column p {
 	color: #999999;

@@ -2,6 +2,7 @@
 function mytheme_setup()
 {
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'serv-thumb', 180, 540 );//180 de ancho...alto "ilimitado"
 
 	register_nav_menus( array(
 		'primary' => 'Menú Principal',

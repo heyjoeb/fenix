@@ -268,6 +268,11 @@ h1 {
 	font-size: 1.6em;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	text-transform: uppercase;
+}
+h1 a {
+	color: #f2c001;
+	text-decoration: none;
 }
 .title-light {
 	color: #ec9f01;

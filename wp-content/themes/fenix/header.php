@@ -98,7 +98,7 @@
 		<!--termina #nav-main-->
 		<div id="header-main">
 			<div id="logo">
-				<img src="img/logo_fenix_valor.png" width="102" height="130" alt="fenix valor"></div>
+				<img src="<?php bloginfo('template_directory'); ?>/img/logo_fenix_valor.png" width="102" height="130" alt="fenix valor"></div>
 			<!--termina #logo-->
 			<div id="header-copy">
 				<span id="caps-copy">En FENIX VALOR</span>

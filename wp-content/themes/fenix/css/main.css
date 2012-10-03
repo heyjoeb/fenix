@@ -579,18 +579,20 @@ fin estilos drop-menu
 	background-color: #EC9F01;
 	margin-bottom: 3px;
 }
-.main-content .three-columns {
-	margin-right: 20px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+.main-content .three-columns,
+.main-content blockquote {
+	margin: 25px 0 25px 20px;
 	width: 185px;
 	float: left;
 }
-.main-content .three-columns-last {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	width: 185px;
-	float: left;
+.main-content blockquote {
+	margin-top: 5px;
+}
+.main-content .three-columns:first-child {
+	margin: 25px 0;
+}
+.main-content blockquote:first-of-type {
+	margin: 5px 0 25px;
 }
 
 
@@ -617,7 +619,9 @@ fin estilos drop-menu
 	color: #FFF;
 	text-decoration: underline;
 }
-.main-content .three-columns h3 {
+.main-content .three-columns h3,
+.main-content .three-columns-last h3,
+.main-content blockquote h3 {
 	color: #1c69a5;
 	font-family: 'OpenSansCondensedLight', Helvetica, Arial,     sans-serif;
 	background-image: url(../img/icon_check.png);
@@ -634,22 +638,8 @@ fin estilos drop-menu
 	margin-left: 0px;
 	height: 40px;
 }
-.main-content .three-columns-last h3 {
-	color: #1c69a5;
-	font-family: 'OpenSansCondensedLight', Helvetica, Arial,     sans-serif;
-	background-image: url(../img/icon_check.png);
-	background-repeat: no-repeat;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 35px;
-	font-size: 1.7em;
+.main-content blockquote:last-of-type h3 {
 	line-height: 0.8em;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 10px;
-	margin-left: 0px;
-	height: 40px;
 }
 .three-columns-last h3 .small-h3 {
 	font-size: 0.9em;
@@ -679,19 +669,28 @@ fin estilos drop-menu
 	margin-top: 20px;
 }
 
+.one-column h1 {
+	border-bottom: 1px solid #fdc001;
+	clear: left;
+	margin-bottom: 20px;
+}
+
 .main-content .one-column img {
 	border: 4px solid #999999;
 	float: left;
 	margin-right: 20px;
 }
 .main-content .one-column p {
-
+	color: #999999;
+	font-size: 0.8em;
+	margin-top: 0px;
+	padding-top: 0px;
 }
-.one-column .text-dark a {
+.one-column a {
 	color: #f2c001;
 	text-decoration: none;
 }
-.one-column .text-dark a:hover {
+.one-column a:hover {
 	color: #f2c001;
 	text-decoration: underline;
 }
@@ -995,6 +994,9 @@ fin estilos drop-menu
 	padding-right: 20px;
 	padding-left: 20px;
 }
+.sidebar p {
+	color: #FFF;
+}
 #container-videos {
 	width: 250px;
 	height: 310px;
@@ -1111,7 +1113,7 @@ fin estilos drop-menu
 	color: #FFF;
 	margin-bottom: 20px;
 }
-.wpcf7 p {
+.sidebar .wpcf7 p {
 	margin-top: 0px;
 }
 
@@ -1151,26 +1153,26 @@ fin estilos drop-menu
 	margin-right: 7px;
 }
 
-.wpcf7 .label-contact {
+.sidebar .wpcf7 .label-contact {
 	display: block;
 	margin-bottom: 12px;
 	text-align: right;
 }
-.wpcf7 .label-contact-last {
+.sidebar .wpcf7 .label-contact-last {
 	display: block;
 	margin-bottom: 12px;
 	text-align: right;
 }
-.wpcf7 .label-contact input {
+.sidebar .wpcf7 .label-contact input {
 	color: #999;
 }
 
-.wpcf7 .label-contact-last textarea {
+.sidebar .wpcf7 .label-contact-last textarea {
 	width: 150px;
 	height: 40px;
 	color: #999;
 }
-.wpcf7 .button {
+.sidebar .wpcf7 .button {
 	width: 50px;
 	margin-left: 180px;
 }
@@ -1187,33 +1189,40 @@ fin estilos drop-menu
 	height: 300px;
 	margin-right: 20px;
 }
-#main-contact .label-contact {
+.main-content .wpcf7 {
+	float: right;
+	width: 260px;
+	margin-left: 20px;
+}
+.main-content .wpcf7 .label-contact {
+	color: #FFF;
 	margin-bottom: 12px;
 	display: block;
 	float: left;
 	width: 250px;
 }
-#main-contact .label-contact-last {
+.main-content .wpcf7 .label-contact-last {
+	color: #FFF;
 	display: block;
 	margin-bottom: 12px;
 	float: left;
 	width: 250px;
 }
-#main-contact .label-contact input {
+.main-content .wpcf7 .label-contact input {
 	color: #999;
 	float: left;
 	width: 250px;
 	margin-top: 5px;
 }
 
-#main-contact .label-contact-last textarea {
+.main-content .wpcf7 .label-contact-last textarea {
 	width: 250px;
 	height: 40px;
 	color: #999;
 	float: left;
 	margin-top: 5px;
 }
-#main-contact .button {
+.main-content .wpcf7 .button {
 	width: 50px;
 	float: right;
 	margin-right: 5px;

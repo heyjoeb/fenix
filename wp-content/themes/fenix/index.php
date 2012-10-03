@@ -7,10 +7,12 @@
     ?>
     <h1><a href="<?php echo get_permalink($service->ID); ?>"><?php echo $service->post_title; ?></a></h1>
     <div class="underline"></div>
+    <div>
     <?php
     $parent_id = $service->ID;
     include('services_preview.php');
     ?>
+    </div>
     <div class="clearfloat"></div>
   <?php endforeach; ?>
 

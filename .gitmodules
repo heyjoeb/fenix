@@ -1,0 +1,6 @@
+[submodule "wp-content/plugins/kc-essentials"]
+	path = wp-content/plugins/kc-essentials
+	url = https://github.com/kucrut/kc-essentials
+[submodule "wp-content/plugins/kc-settings"]
+	path = wp-content/plugins/kc-settings
+	url = https://github.com/kucrut/kc-settings

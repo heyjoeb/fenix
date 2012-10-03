@@ -40,59 +40,13 @@
 	<div id="main-wrapper">
 
 		<div id="nav-main">
-			<ul id="drop-menu">
-				<li>
-					<a class="active-nav" href="index.html">INICIO</a>
-				</li>
-				<li>
-					<a href="la_compania.html">LA COMPAÑÍA</a>
-				</li>
-				<li>
-					<a href="servicios_financieros.html">SERVICIOS FINANCIEROS</a>
-					<ul>
-						<li class="first-submenu">
-							<a href="valoracion_empresas.html">Valoración de empresas</a>
-						</li>
-						<li>
-							<a href="diagnostico_financiero.html">Diagnóstico Financiero</a>
-						</li>
-						<li>
-							<a href="precio_objetivo_igbc.html">Precio Objetivo IGBC</a>
-						</li>
-					</ul>
-					<div class="clearfloat"></div>
-				</li>
-				<li>
-					<a href="servicios_bursatiles.html">SERVICIOS BURSÁTILES</a>
-					<ul>
-						<li class="first-submenu">
-							<a href="servicio_fenix.html">Servicio Fenix</a>
-						</li>
-						<li>
-							<a href="senales_mercado.html">Señales del mercado</a>
-						</li>
-						<li>
-							<a href="conferencias_capacitaciones.html">Conferencias y Capacitaciones</a>
-						</li>
-					</ul>
-					<div class="clearfloat"></div>
-				</li>
-				<li>
-					<a href="informes.html">INFORMES</a>
-					<ul>
-						<li class="first-submenu">
-							<a href="informes_fenix.html">Informes Fenix</a>
-						</li>
-						<li>
-							<a href="fenix_en_los_medios.html">Fenix en los medios</a>
-						</li>
-					</ul>
-					<div class="clearfloat"></div>
-				</li>
-				<li>
-					<a href="contacto.html">CONTACTO</a>
-				</li>
-			</ul>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'primary',
+				'container' => false,
+				'menu_id' => 'drop-menu',
+			) );
+			?>
 			<div class="clearfloat"></div>
 		</div>
 		<!--termina #nav-main-->

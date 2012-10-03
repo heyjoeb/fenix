@@ -2,6 +2,10 @@
 function mytheme_setup()
 {
 	add_theme_support( 'post-thumbnails' );
+
+	register_nav_menus( array(
+		'primary' => 'Menú Principal',
+	) );
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );
 
@@ -40,6 +44,54 @@ function create_post_types()
 			'page-attributes',
 		),
 		'menu_position' => 21,
+	));
+	register_post_type( 'service', array(
+		'labels' => array(
+			'name' => 'Servicios',
+			'singular_name' => 'Servicio',
+			'add_new' => 'Añadir Nuevo',
+			'add_new_item' => 'Añadir Nuevo Servicio',
+			'edit_item' => 'Editar Servicio',
+			'new_item' => 'Nuevo Servicio',
+			'view_item' => 'Ver Servicio',
+			'search_items' => 'Buscar Servicios',
+			'not_found' => 'Servicios no encontrados',
+			'not_found_in_trash' => 'Servicios no encontrados en papelera'
+		),
+		'public' => true,
+		'hierarchical' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'excerpt',
+			'page-attributes',
+		),
+		'menu_position' => 22,
+	));
+	register_post_type( 'inform', array(
+		'labels' => array(
+			'name' => 'Informes',
+			'singular_name' => 'Informe',
+			'add_new' => 'Añadir Nuevo',
+			'add_new_item' => 'Añadir Nuevo Informe',
+			'edit_item' => 'Editar Informe',
+			'new_item' => 'Nuevo Informe',
+			'view_item' => 'Ver Informe',
+			'search_items' => 'Buscar Informes',
+			'not_found' => 'Informes no encontrados',
+			'not_found_in_trash' => 'Informes no encontrados en papelera'
+		),
+		'public' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+		),
+		'taxonomies' => array(
+			'category',
+		),
+		'menu_position' => 23,
 	));
 }
 add_action('init', 'create_post_types');

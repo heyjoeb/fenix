@@ -119,18 +119,19 @@
 
 		<div id="slides">
 			<div class="slides_container">
-				<div>
-					<a href="#">
-						<img src="img/banner3.jpg" width="960" height="157" alt="rotador 1" title="rotador 1"></a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="img/banner4.jpg" width="960" height="157" alt="rotador 2" title="rotador 2"></a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="img/banner5.jpg" width="960" height="157" alt="rotador 3" title="rotador 3"></a>
-				</div>
+				<?php
+				$args = array( 'posts_per_page' => -1, 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'slide' );
+				$query_slider = new WP_Query($args);
+				while ( $query_slider->have_posts() ) : $query_slider->the_post();
+					$link = get_post_meta( get_the_ID(), '_slide_link', true );
+				?>
+					<div>
+						<a href="<?php echo $link; ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('full'); ?></a>
+					</div>
+				<?php
+				endwhile;
+				wp_reset_postdata();
+				?>
 			</div>
 			<!--termina .slides_container-->
 		</div>

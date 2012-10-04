@@ -41,10 +41,10 @@
 	<?php
 	global $post;
 
-	if ( is_page() && $post->post_parent ) {
-		echo '<div id="main-wrapper">';
-	} else {
+	if ( 'service' == get_post_type() && $post->post_parent ) {
 		echo '<div id="main-wrapper-light">';
+	} else {
+		echo '<div id="main-wrapper">';
 	}
 	?>
 

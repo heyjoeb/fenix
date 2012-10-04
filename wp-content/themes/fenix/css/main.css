@@ -972,17 +972,9 @@ fin estilos drop-menu
 	text-decoration: none;
 }
 
-.pagination ul li .active-pagination {
+.pagination ul li .current {
 	background-color: #e28101;
 	text-decoration: none;
-	padding-top: 5px;
-	padding-right: 7px;
-	padding-bottom: 5px;
-	padding-left: 7px;
-	color: #FFF;
-}
-.pagination ul li .active-pagination:hover {
-	background-color: #EC9F01;
 	padding-top: 5px;
 	padding-right: 7px;
 	padding-bottom: 5px;
@@ -1360,8 +1352,8 @@ abbr[title] {
 }
 .sidebar .follow {
 	color: #EC9F01;
-    text-decoration: none;	
+    text-decoration: none;
 }
 .sidebar .follow:hover {
-    text-decoration: underline;	
+    text-decoration: underline;
 }

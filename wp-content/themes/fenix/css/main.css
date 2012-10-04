@@ -563,9 +563,6 @@ fin estilos drop-menu
 	padding-left: 20px;
 	width: 610px;
 	float: left;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #999;
 }
 .main-content .underline {
 	height: 1px;
@@ -1023,6 +1020,9 @@ fin estilos drop-menu
 	width: 250px;
 	padding-right: 20px;
 	padding-left: 20px;
+    border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999999;
 }
 .sidebar p {
 	color: #FFF;

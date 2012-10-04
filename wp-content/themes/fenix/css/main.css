@@ -999,6 +999,7 @@ fin estilos drop-menu
 	border-bottom-color: #f2c001;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
+	overflow: hidden;
 }
 
 

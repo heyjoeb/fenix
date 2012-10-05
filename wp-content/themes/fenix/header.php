@@ -27,6 +27,8 @@
 	<meta name="description" content="<?php echo $display_title ?>">
 	<meta name="viewport" content="width=device-width">
 
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
+
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
 

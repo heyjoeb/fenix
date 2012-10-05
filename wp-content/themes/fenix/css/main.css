@@ -1359,15 +1359,19 @@ abbr[title] {
 }
 .main-content table {
 	float: left;
-	margin-right: 20px;
+	margin-right: 10px;
 	font-size: 12px;
 	color: #121212;
-	
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 .main-content thead {
 	background-color: #CCC;	
 }
 .main-content td {
-	padding: 10px;
 	border: 1px solid #999;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
 }

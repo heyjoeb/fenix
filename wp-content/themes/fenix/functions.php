@@ -94,6 +94,28 @@ function create_post_types()
 		),
 		'menu_position' => 23,
 	));
+	register_post_type( 'conference', array(
+		'labels' => array(
+			'name' => 'Conferencias',
+			'singular_name' => 'Conferencia',
+			'add_new' => 'Añadir Nueva',
+			'add_new_item' => 'Añadir Nueva Conferencia',
+			'edit_item' => 'Editar Conferencia',
+			'new_item' => 'Nueva Conferencia',
+			'view_item' => 'Ver Conferencia',
+			'search_items' => 'Buscar Conferencias',
+			'not_found' => 'Conferencias no encontradas',
+			'not_found_in_trash' => 'Conferencias no encontradas en papelera'
+		),
+		'public' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+		),
+		'menu_position' => 24,
+	));
+
 }
 add_action('init', 'create_post_types');
 
@@ -122,6 +144,35 @@ function slider_options( $groups ) {
 						'title'		=> 'URL Enlace',
 						'type'		=> 'text',
 					)
+				)
+			)
+		)
+	);
+
+	$groups[] = $my_group;
+	return $groups;
+}
+
+//opciones del tema para servicios
+add_filter( 'kc_post_settings', 'service_options' );
+function service_options( $groups ) {
+	$my_group = array(
+		'service'	=> array(		// Post type name
+			array(
+				'id'		=> 'service_section',
+				'title'		=> 'Opciones Servicio',
+				'role'		=> array('administrator', 'editor'),
+				'fields'	=> array(
+					array(
+						'id'		=> 'template',
+						'title'		=> 'Plantilla',
+						'type'		=> 'select',
+						'options'	=> array(
+							'normal'	   => 'Normal',
+							'conferencias' => 'Conferencias',
+						),
+						'default'	=> 'normal'
+					),
 				)
 			)
 		)

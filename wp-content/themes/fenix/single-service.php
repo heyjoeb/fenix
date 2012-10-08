@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+<?php
+$service_template = get_post_meta( get_the_ID(), '_template', true );
+if ($service_template && $service_template == 'conferencias'){
+  get_template_part('page', 'conf');
+}else{
+?>
+
 <div class="main-content">
 
   <?php
@@ -39,5 +46,8 @@
   <div class="underline"></div>
 </div>
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php
+}
+get_sidebar();
+get_footer();
+?>

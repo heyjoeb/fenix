@@ -1170,8 +1170,8 @@ fin estilos drop-menu
 	height: 40px;
 	color: #999;
 }
-#main-wrapper-light .sidebar .wpcf7 .button {
-	width: 50px;
+#main-wrapper-light .sidebar .wpcf7-submit {
+	width: 70px;
 	margin-left: 180px;
 }
 .orange-text  {
@@ -1198,8 +1198,8 @@ fin estilos drop-menu
 	height: 40px;
 	color: #999;
 }
-.sidebar .wpcf7 .button {
-	width: 50px;
+.sidebar .wpcf7-submit {
+	width: 70px;
 	margin-left: 180px;
 }
 .main-content #main-contact {
@@ -1248,15 +1248,16 @@ fin estilos drop-menu
 	float: left;
 	margin-top: 5px;
 }
-.main-content .wpcf7 .button {
-	width: 50px;
+.main-content .wpcf7wpcf7-submit {
+	width: 70px;
 	float: right;
 	margin-right: 5px;
 	margin-top: 10px;
 	margin-bottom: 25px;
 }
-.button {
+.wpcf7-submit{
 	border-top: 1px solid #f78848;
+	border-width: 1px 0 0;
 	background: #d46e00;
 	background: -webkit-gradient(linear, left top, left bottom, from(#d55200), to(#d46e00));
 	background: -webkit-linear-gradient(top, #d55200, #d46e00);
@@ -1280,13 +1281,13 @@ fin estilos drop-menu
 	padding-bottom: 5px;
 	padding-left: 10px;
    }
-.button:hover {
+.wpcf7-submit:hover {
    border-top-color: #f08d03;
    background: #f08d03;
    color: #ffffff;
    cursor: pointer;
    }
-.button:active {
+.wpcf7-submit:active {
    border-top-color: #d55200;
    background: #d55200;
    }
@@ -1367,7 +1368,7 @@ abbr[title] {
 	margin-bottom: 20px;
 }
 .main-content thead {
-	background-color: #CCC;	
+	background-color: #CCC;
 }
 .main-content td {
 	border: 1px solid #999;

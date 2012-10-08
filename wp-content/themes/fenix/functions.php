@@ -182,6 +182,45 @@ function service_options( $groups ) {
 	return $groups;
 }
 
+//opciones del tema para servicios
+add_filter( 'kc_post_settings', 'conference_options' );
+function conference_options( $groups ) {
+	$my_group = array(
+		'conference'	=> array(		// Post type name
+			array(
+				'id'		=> 'conference_section',
+				'title'		=> 'Opciones Conferencias',
+				'role'		=> array('administrator', 'editor'),
+				'fields'	=> array(
+					array(
+						'id'		=> 'date',
+						'title'		=> 'Fecha',
+						'type'		=> 'text',
+					),
+					array(
+						'id'		=> 'place',
+						'title'		=> 'Lugar',
+						'type'		=> 'text',
+					),
+					array(
+						'id'		=> 'duration',
+						'title'		=> 'Duración',
+						'type'		=> 'text',
+					),
+					array(
+						'id'		=> 'value',
+						'title'		=> 'Valor',
+						'type'		=> 'text',
+					),
+				)
+			)
+		)
+	);
+
+	$groups[] = $my_group;
+	return $groups;
+}
+
 //registrar zonas de widgets
 function create_widget_zones()
 {

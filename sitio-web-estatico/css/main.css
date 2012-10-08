@@ -525,6 +525,10 @@ fin estilos drop-menu
 #stock-ticker  {
 	background-color: #000;
 }
+.header_interna {
+	height: 157px;
+	width: 960px;	
+}
 /*------------------------------------------------------------------
 			Slides container
 			Important:

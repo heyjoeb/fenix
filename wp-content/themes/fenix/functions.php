@@ -173,6 +173,13 @@ function service_options( $groups ) {
 						),
 						'default'	=> 'normal'
 					),
+					array(
+						'id'    => 'wide_img',
+						'title' => 'Imagen Superior',
+						'type'  => 'file',
+						'mode'  => 'single',
+						'size'  => 'full'
+					),
 				)
 			)
 		)
@@ -182,7 +189,7 @@ function service_options( $groups ) {
 	return $groups;
 }
 
-//opciones del tema para servicios
+//opciones del tema para conferencias
 add_filter( 'kc_post_settings', 'conference_options' );
 function conference_options( $groups ) {
 	$my_group = array(

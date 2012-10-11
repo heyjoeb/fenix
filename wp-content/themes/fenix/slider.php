@@ -1,8 +1,11 @@
 <?php
-if (is_page() || 'service' == get_post_type()){
+if (is_page() || is_category() || 'service' == get_post_type()){
 	echo '<div class="header_interna">';
 	if (is_page()) {
 		the_post_thumbnail('full');
+	}elseif(is_category()){
+		$informes = get_page_by_path('informes');
+		echo get_the_post_thumbnail( $informes->ID, 'full', $attr );
 	}else{
 		$image_id = get_post_meta( get_the_ID(), "_wide_img", true );
 		echo wp_get_attachment_image( $image_id, 'full');

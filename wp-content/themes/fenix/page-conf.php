@@ -12,7 +12,7 @@
     <p class="text-light"><?php echo $post->post_content; ?></p>
 
     <?php
-    $posts_per_page = 1;
+    $posts_per_page = 4;
 
     // get the current page
     if ( get_query_var('paged') ) {

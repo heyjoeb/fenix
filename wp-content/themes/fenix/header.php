@@ -76,10 +76,5 @@
 			<div class="clearfloat"></div>
 		</div>
 		<!--termina #header-main-->
-		<div id="stock-ticker">
-			<iframe id="videoDataifx" width="960" scrolling="no" height="33"
-		frameborder="no" src="http://dataifx.com/widget/index.php/ticker"></iframe>
-		</div>
-		<!--termina #stock-ticker-->
 
 		<?php get_template_part('slider'); ?>

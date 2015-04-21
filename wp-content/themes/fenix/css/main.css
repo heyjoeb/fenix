@@ -1190,13 +1190,15 @@ fin estilos drop-menu
 	text-align: right;
 }
 .sidebar .wpcf7 .label-contact input {
-	color: #999;
+	color: #333;
 }
-
 .sidebar .wpcf7 .label-contact-last textarea {
 	width: 150px;
 	height: 40px;
-	color: #999;
+	color: #333;
+}
+.sidebar .wpcf7 span.wpcf7-not-valid-tip {
+  color: #333;
 }
 .sidebar .wpcf7-submit {
 	width: 70px;
